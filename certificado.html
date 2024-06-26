@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&family=League+Script&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap" rel="stylesheet">
+    <!--  -->
+    <link rel="stylesheet" href="estiloCertificado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap" rel="stylesheet">
+    <title>Gerador de Certificado</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="certificado.js"></script>
+
+</head>
+<body>
+    <div id ="container">
+
+       
+        <form id="certificadoForm">
+            <div id = "estruturaCertificado">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required><br><br>
+            
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" required><br><br>
+
+            <label for="dataConclusao">Data de Conclusão:</label>
+            <input type="date" id="dataConclusao" required><br><br>
+
+            <label for="instituicao">Instituição:</label>
+            <input type="text" id="instituicao"><br><br>
+
+            <label for = "nomeDiretor">Diretor pedagogico: </label>
+            <input type="text" id = "nomeDiretor"><br><br>
+
+            <button type="button" id="btnGerar" onclick="gerarCertificado()">Gerar certificado</button>
+        </div>
+
+        </form>
+
+    </div>
+
+
+</body>
+</html>
