@@ -111,5 +111,5 @@ function formatData(data) {
     const dia = partesData[2];
 
     // Formatação data: dia, mês, ano
-    return `${dia} de ${mes} de ${ano}`;
+    return `${dia} do ${mes} de ${ano}`;
 }
